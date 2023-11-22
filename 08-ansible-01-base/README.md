@@ -181,6 +181,8 @@ Confirm New Vault password:
 Encryption successful
 ```
 
+![step8](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw01-master/08-ansible-01-base/step8.png)
+
 8. Проверка плейбука после шифрования
 
 ```bash
