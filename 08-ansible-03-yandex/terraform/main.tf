@@ -10,14 +10,10 @@ resource "yandex_vpc_subnet" "develop" {
 
 
 data "yandex_compute_image" "ubuntu" {
-  #family = "ubuntu-2004-lts"
-  #family = var.vm_family
   family = "centos-7"
 }
 resource "yandex_compute_instance" "vm-1" {
-  #name        = "netology-develop-platform-web"
   name = local.name_web
-  #platform_id = "standard-v1"
   platform_id = var.vm_web_platform_id
 
   resources {
