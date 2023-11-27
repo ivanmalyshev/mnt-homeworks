@@ -120,5 +120,6 @@ vector-01                  : ok=6    changed=5    unreachable=0    failed=0    s
 
 [ссылка на терраформ](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw03-master/08-ansible-03-yandex/terraform/main.tf)
 
-[скрин lihgthouse](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw03-master/08-ansible-03-yandex/screen.png)
----
+![скрин lihgthouse](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw03-master/08-ansible-03-yandex/screen.png)
+
+
