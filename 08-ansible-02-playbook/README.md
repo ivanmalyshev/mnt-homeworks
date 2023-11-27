@@ -140,7 +140,7 @@ sinks:
     to_clickhouse:
         compression: gzip
         database: logs
-        endpoint: http://192.168.88.126:8123
+        endpoint: http://127.0.0.1:8123
         healthcheck: true
         inputs:
         - demo_logs
@@ -155,5 +155,5 @@ sources:
 ```
 `add tag 08-ansible-02-playbook `
 
-Раскатывал и в я.облако и локально на вм в проксмксе - повторяется и там и там. Но не смог разобраться с доступом к порту 8123, должен быть доступен по http или нет?
+Раскатывал и в я.облако и локально на вм в проксмксе - повторяется и там и там. 
 
