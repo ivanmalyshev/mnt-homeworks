@@ -23,11 +23,6 @@
       ansible.builtin.yum:
         name: nginx
         state: present
-    - name: Start-nginx
-      become: true
-      ansible.builtin.service: 
-        name: nginx
-        state: started
     - name: Creating config
       become: true
       ansible.builtin.template:
@@ -100,8 +95,6 @@
       notify: Start clickhouse service
     - name: Flush handlers
       meta: flush_handlers
-    - name: Create database
-      ansible.builtin.command: "sleep 5"
     - name: Create database
       ansible.builtin.command: "clickhouse-client -q 'create database logs;'"
       register: create_db
