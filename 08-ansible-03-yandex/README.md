@@ -123,3 +123,19 @@ vector-01                  : ok=6    changed=5    unreachable=0    failed=0    s
 ![скрин lihgthouse](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw03-master/08-ansible-03-yandex/screen.png)
 
 
+### Дополнение
+1. ansiblke-lint - лишние пробелы после `ansible.builtin.service`
+
+```bash
+mid@mid-desktop:~/Nextcloud/netology/ans_cicd_mon/mnt-homeworks/08-ansible-03-yandex/playbook$ ansible-lint site.yml
+[201] Trailing whitespace
+site.yml:28
+      ansible.builtin.service: 
+
+mid@mid-desktop:~/Nextcloud/netology/ans_cicd_mon/mnt-homeworks/08-ansible-03-yandex/playbook$ ansible-lint site.yml
+```
+
+![linter](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw03-master/08-ansible-03-yandex/linter.png)
+
+2. [Документация к плебуку по ссылке ](https://github.com/ivanmalyshev/mnt-homeworks/blob/ans-hw03-master/08-ansible-03-yandex/playbook/README.md)
+
