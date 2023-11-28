@@ -25,7 +25,7 @@
         state: present
     - name: Start-nginx
       become: true
-      ansible.builtin.service: 
+      ansible.builtin.service:
         name: nginx
         state: started
     - name: Creating config
@@ -100,8 +100,10 @@
       notify: Start clickhouse service
     - name: Flush handlers
       meta: flush_handlers
-    - name: Create database
-      ansible.builtin.command: "sleep 5"
+    - name: Pause playbook for start clickhouse
+      ansible.builtin.pause:
+            seconds: 10
+            echo: false
     - name: Create database
       ansible.builtin.command: "clickhouse-client -q 'create database logs;'"
       register: create_db
