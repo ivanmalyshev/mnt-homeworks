@@ -8,9 +8,9 @@
 
 ## Основная часть
 
-Ваша цель — разбить ваш playbook на отдельные roles. 
+Ваша цель — разбить ваш playbook на отдельные roles.
 
-Задача — сделать roles для ClickHouse, Vector и LightHouse и написать playbook для использования этих ролей. 
+Задача — сделать roles для ClickHouse, Vector и LightHouse и написать playbook для использования этих ролей.
 
 Ожидаемый результат — существуют три ваших репозитория: два с roles и один с playbook.
 
@@ -23,12 +23,12 @@
      - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
        scm: git
        version: "1.13"
-       name: clickhouse 
+       name: clickhouse
    ```
 
 2. При помощи `ansible-galaxy` скачайте себе эту роль.
 3. Создайте новый каталог с ролью при помощи `ansible-galaxy role init vector-role`.
-4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
+4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`.
 5. Перенести нужные шаблоны конфигов в `templates`.
 6. Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
 7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
@@ -39,8 +39,27 @@
 
 ---
 
-### Как оформить решение задания
+## Ответ
+Ссылки на репозитории с ролями:
+1. [ссылка на роль lighthouse](https://github.com/ivanmalyshev/lighthouse-role)
+2. [ссылка на роль vector](https://github.com/ivanmalyshev/vector-role)
 
-Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
+Ссылка на плейбук - [ссылка на playbook](https://github.com/ivanmalyshev/mnt-homeworks/tree/ans-hw04-master/08-ansible-04-role/playbook)
+В site.yml вызываются 2 роли для lighthouse/vector
+```yaml
+.....
+- name: Install Lighthouse
+  hosts: lighthouse
+  roles: lighthouse-role
+  notify: reload-nginx
+........
+........
+........
+- name: Install Vector
+  hosts: vector
+  roles: vector-role
+  notify: Start Vector service
 
----
+```
+
+Отдельными тасками ставится nginx и ниже clickhouse
