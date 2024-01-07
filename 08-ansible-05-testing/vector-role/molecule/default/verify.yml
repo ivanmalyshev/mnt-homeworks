@@ -1,0 +1,9 @@
+---
+- name: Проверка успешного запуска Vector
+ assert:
+   that:
+     - vector_run_output.rc == 0
+   fail_msg: "Запуск Vector не удался."
+   success_msg: "Vector успешно запущен."
+ vars:
+   vector_run_output: "{{ lookup('pipe', 'systemctl is-active vector') }}"

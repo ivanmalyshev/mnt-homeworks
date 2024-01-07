@@ -1,0 +1,15 @@
+---
+- ansible.builtin.include_tasks: deb.yml
+  when: ansible_os_family == "Debian"
+
+- ansible.builtin.include_tasks: rpm.yml
+  when: ansible_os_family == "RedHat"
+
+- name: VECTOR | Using vector template
+  become: true
+  become_method: su
+  ansible.builtin.template:
+    src: "templates/vector.conf.j2"
+    dest: "/etc/vector/vector.toml"
+    mode: "0644"
+  notify: Restart Vector service
