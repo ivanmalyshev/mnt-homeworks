@@ -36,7 +36,7 @@
  *    version: 8_282;
  *    classifier: distrib;
  *    type: tar.gz.
-   
+
 2. В него же загрузите такой же артефакт, но с version: 8_102.
 3. Проверьте, что все файлы загрузились успешно.
 4. В ответе пришлите файл `maven-metadata.xml` для этого артефекта.
@@ -65,3 +65,16 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
+
+
+
+#### Выполнение работы
+
+Не работает плейбук - не ставится postgres на centos7
+
+Валится на установке самого пакета.
+
+![question1](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/question1.png)
+![question2](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/question2.png)
+
+так и не смог победить, как не старался - не ставится. Какие могут быть рекомендации к исправлению?
