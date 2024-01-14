@@ -87,4 +87,13 @@
 UPD:
 решил путем установки postgres12 - возможно стоит поправить ТЗ?
 
-![done](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/done.png)
+![done](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/done.png)
+
+```bash
+TASK [Wait for Nexus port if started] ********************************************************************************************************************************************************
+ok: [nexus-01]
+
+PLAY RECAP ***********************************************************************************************************************************************************************************
+nexus-01                   : ok=17   changed=15   unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
+sonar-01                   : ok=34   changed=16   unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+```
