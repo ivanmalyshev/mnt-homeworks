@@ -78,7 +78,7 @@
 ![question2](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/question2.png)
 
 
-Репозиторий PostgreSQL содержит информацию обо всех доступных релизах PostgreSQL.
+Репозиторий PostgreSQL не содержит информацию обо всех доступных релизах PostgreSQL.
 ![question2](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/question3.png)
 
 так и не смог победить, как не старался - не ставится. Какие могут быть рекомендации к исправлению?
