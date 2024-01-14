@@ -87,4 +87,4 @@
 UPD:
 решил путем установки postgres12 - возможно стоит поправить ТЗ?
 
-
+![done](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/done.png)
