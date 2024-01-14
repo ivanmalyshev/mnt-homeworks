@@ -114,10 +114,11 @@
         group: "{{ sonarqube_db_user }}"
 
     - name: "Set up ssh key to access for managed node"
-      authorized_key:
+      #authorized_key:
+      ansible.posix.authorized_key:
         user: "{{ sonarqube_db_user }}"
         state: present
-        key: "{{ lookup('file', 'id_rsa.pub') }}"
+        key: "{{ lookup('file', 'id_ed25519.pub') }}"
 
     - name: "Allow group to have passwordless sudo"
       lineinfile:
@@ -138,7 +139,7 @@
 
 - name: Get Sonarqube installed
   hosts: sonarqube
-  vars: 
+  vars:
     ansible_user: "{{ sonarqube_db_user }}"
   tasks:
     - name: Get distrib ZIP
@@ -180,7 +181,7 @@
           line: "sonar.jdbc.url=jdbc:postgresql://localhost:{{ sonar_db_port }}/{{ sonarqube_db_name }}?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance"
         - regexp: "^sonar.web.context"
           line: "sonar.web.context={{ sonar_web_context }}"
-    
+
     - name: Generate wrapper.conf
       template:
         src: wrapper.conf.j2
@@ -300,7 +301,8 @@
 
     - name: Raise nofile limit for Nexus user
       become: true
-      pam_limits:
+      #pam_limits:
+      community.general.pam_limits:
         domain: "{{ nexus_user_name }}"
         limit_type: "-"
         limit_item: nofile
