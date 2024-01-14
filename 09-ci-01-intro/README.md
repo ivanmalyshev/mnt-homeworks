@@ -46,3 +46,19 @@
 
 ### Решение
 
+![scrum](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-01-intro/img/scrum.png)
+
+![kanban](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-01-intro/img/kanban.png)
+
+workflow bug
+![bug](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-01-intro/img/bug.png)
+
+workflow regular
+![regular](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-01-intro/img/regular.png)
+
+
+ссылки на xml файлы
+
+https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-01-intro/xml/imalyshev-bug.xml
+
+https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-01-intro/xml/imalyshev-regular.xml
