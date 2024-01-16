@@ -145,4 +145,4 @@ mid@mid-desktop:~/.m2/repository/netology/java/8_282$
 ```
 
 ссылка на pom-файл
-[meta](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/mvn/pom.xml)
+(https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/mvn/pom.xml)
