@@ -97,3 +97,28 @@ PLAY RECAP *********************************************************************
 nexus-01                   : ok=17   changed=15   unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
 sonar-01                   : ok=34   changed=16   unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
 ```
+
+
+## Знакомоство с SonarQube
+
+![sonar-bug](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/sonar/sonar-bug.png)
+
+![sonar-fixbug](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/sonar/sonar-fixbug.png)
+
+![sonar-fixbug](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/sonar/warnings.png)
+
+Для фикса варнингов использовал
+```bash
+sonar-scanner  \
+-Dsonar.projectKey=mid-netology \
+-Dsonar.sources=. \
+-Dsonar.host.url=http://158.160.106.92:9000  \
+-Dsonar.login=3bc6951cd4eb3a56d03b8d0c187e48ec7e575312 \
+-Dsonar.coverage.exclusions=fail.py \
+-Dsonar.python.version=2.7,3.7 \
+-Dsonar.scm.disabled=true
+```
+Dsonar.python.version=2.7,3.7 - устанавливает точную версию интерпритатора
+
+Dsonar.scm.disabled=true - Отключение плагина SCM. Используется для сбора данных из системы контроля во время анализа кода
+
