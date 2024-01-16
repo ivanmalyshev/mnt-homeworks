@@ -87,7 +87,6 @@
 UPD:
 решил путем установки postgres12 - возможно стоит поправить ТЗ?
 
-![done](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/done.png)
 
 ```bash
 TASK [Wait for Nexus port if started] ********************************************************************************************************************************************************
