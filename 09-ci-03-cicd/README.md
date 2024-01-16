@@ -122,3 +122,27 @@ Dsonar.python.version=2.7,3.7 - устанавливает точную верс
 
 Dsonar.scm.disabled=true - Отключение плагина SCM. Используется для сбора данных из системы контроля во время анализа кода
 
+
+## Знакомство с Nexus
+
+![meta](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/mvn/nexus.png)
+
+ссылка на файл metadata.xml
+![meta](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/mvn/maven-metadata.xml)
+
+
+
+## Знакомство с Maven
+
+![meta](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/mvn/mvn-build.png)
+
+
+Артефакт загружен
+```bash
+mid@mid-desktop:~/.m2/repository/netology/java/8_282$ ls
+java-8_282-distrib.tar.gz  java-8_282-distrib.tar.gz.sha1  java-8_282.pom.lastUpdated  _remote.repositories
+mid@mid-desktop:~/.m2/repository/netology/java/8_282$
+```
+
+ссылка на pom-файл
+![meta](https://github.com/ivanmalyshev/mnt-homeworks/blob/postgres12/09-ci-03-cicd/mvn/pom.xml)
