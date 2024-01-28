@@ -70,7 +70,7 @@
 
 Все сделал по образу и подобию - не работает. Раннер зарегистирован, но виснет с ошибкой
 
-все файлы из репозитория - отдельно в /code
+все файлы из репозитория - отдельно в [/code](https://github.com/ivanmalyshev/mnt-homeworks/tree/MNT-video/09-ci-06-gitlab/code)
 
 ![1](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/fail-runner.png)
 
