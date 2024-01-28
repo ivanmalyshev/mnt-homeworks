@@ -70,5 +70,10 @@
 
 Все сделал по образу и подобию - не работает. Раннер зарегистирован, но виснет с ошибкой
 
-все файлы из репозитория - отдельно в /netology
+все файлы из репозитория - отдельно в /code
 
+[1](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/fail-runner.png)
+
+[2](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/runner-1.png)
+
+[3](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/runner.png)
