@@ -72,8 +72,8 @@
 
 все файлы из репозитория - отдельно в /code
 
-[1](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/fail-runner.png)
+![1](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/fail-runner.png)
 
-[2](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/runner-1.png)
+![2](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/runner-1.png)
 
-[3](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/runner.png)
+![3](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-06-gitlab/runner.png)
