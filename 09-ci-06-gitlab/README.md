@@ -7,7 +7,7 @@
 Или создайте виртуальную машину из публичного образа [по инструкции](https://cloud.yandex.ru/marketplace/products/yc/gitlab ) .
 2. Создайте виртуальную машину и установите на нее gitlab runner, подключите к вашему серверу gitlab  [по инструкции](https://docs.gitlab.com/runner/install/linux-repository.html) .
 
-3. (* Необязательное задание повышенной сложности. )  Если вы уже знакомы с k8s попробуйте выполнить задание, запустив gitlab server и gitlab runner в k8s  [по инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/gitlab-containers). 
+3. (* Необязательное задание повышенной сложности. )  Если вы уже знакомы с k8s попробуйте выполнить задание, запустив gitlab server и gitlab runner в k8s  [по инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/gitlab-containers).
 
 4. Создайте свой новый проект.
 5. Создайте новый репозиторий в GitLab, наполните его [файлами](./repository).
@@ -25,7 +25,7 @@
 4. Создана директория `/python_api`.
 5. Скрипт из репозитория размещён в /python_api.
 6. Точка вызова: запуск скрипта.
-7. При комите в любую ветку должен собираться docker image с форматом имени hello:gitlab-$CI_COMMIT_SHORT_SHA . Образ должен быть выложен в Gitlab registry или yandex registry.   
+7. При комите в любую ветку должен собираться docker image с форматом имени hello:gitlab-$CI_COMMIT_SHORT_SHA . Образ должен быть выложен в Gitlab registry или yandex registry.
 
 ### Product Owner
 
@@ -56,10 +56,19 @@
 В качестве ответа пришлите подробные скриншоты по каждому пункту задания:
 
 - файл gitlab-ci.yml;
-- Dockerfile; 
+- Dockerfile;
 - лог успешного выполнения пайплайна;
 - решённый Issue.
 
-### Важно 
+### Важно
 После выполнения задания выключите и удалите все задействованные ресурсы в Yandex Cloud.
+
+
+
+### Решение
+Развернул в Яндексе гитлаб + раннер на отдельной ВМ
+
+Все сделал по образу и подобию - не работает. Раннер зарегистирован, но виснет с ошибкой
+
+все файлы из репозитория - отдельно в /netology
 
