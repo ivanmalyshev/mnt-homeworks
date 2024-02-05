@@ -15,21 +15,43 @@
 2. Сделайте autodetect конфигурации.
 3. Сохраните необходимые шаги, запустите первую сборку master.
 4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.
+
+![step](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/screens/build%20step.png)
+
 5. Для deploy будет необходимо загрузить [settings.xml](./teamcity/settings.xml) в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
 6. В pom.xml необходимо поменять ссылки на репозиторий и nexus.
 7. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.
 8. Мигрируйте `build configuration` в репозиторий.
 9. Создайте отдельную ветку `feature/add_reply` в репозитории.
+
+https://github.com/ivanmalyshev/example-teamcity/tree/feature/add_reply/src
+
 10. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово `hunter`.
+
+https://github.com/ivanmalyshev/example-teamcity/blob/feature/add_reply/src/main/java/plaindoll/Welcomer.java
+
 11. Дополните тест для нового метода на поиск слова `hunter` в новой реплике.
+
+https://github.com/ivanmalyshev/example-teamcity/blob/feature/add_reply/src/test/java/plaindoll/WelcomerTest.java
+
 12. Сделайте push всех изменений в новую ветку репозитория.
 13. Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
+
+![step](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/screens/add_reply.png)
+
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
 15. Убедитесь, что нет собранного артефакта в сборке по ветке `master`.
 16. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки.
 17. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.
 18. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity.
 19. В ответе пришлите ссылку на репозиторий.
+
+![step](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/screens/345.png)
+
+![step](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/screens/123.png)
+
+https://github.com/ivanmalyshev/example-teamcity
+
 
 ---
 
