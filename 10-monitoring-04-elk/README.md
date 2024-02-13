@@ -57,9 +57,7 @@ Filebeat следует сконфигурировать для отправки
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
 
-![some_app](![elk-stack](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/elk-stack.png)
-
-![kibana](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/some_app.png)
+![some_app](https://github.com/ivanmalyshev/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/some_app.png)
 
 ---
 
